@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'HK-Grotesk';
+    src: url("./assets/HKGrotesk-Regular.otf") format('opentype');
+  }
+
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0px; 
+    color: white; 
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+nav, footer{
+    position: fixed;
+}
+
+nav, footer{
+    display: flex;
+    width: 100%;
+}
+
+.leftNavLogo, .centerNavContainer, .rightNavHamburger{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+.leftNavLogo{
+    font-family: "HK-Grotesk";
+    font-size: 24px; 
+    justify-content: left;
+    margin-left: 30px;
+    color: white; 
+}
+
+.centerNavContainer{
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.rightFooter{
+    text-transform: uppercase;
+}
+
+.centerNavItem, .rightFooterItem{
+    color: white; 
+    padding-right: 5px; 
+}
+.centerNavItem span, .rightFooterItem span {
+    display:inline-block;
+    border-bottom:1px solid #989898;
+    padding-bottom:2px;
+}
+
+.centerNavItem span:hover, .rightFooterItem span:hover {
+    border-bottom-color: white;
+}
+
+.rightNavHamburger{
+    justify-content: flex-end;
+    margin-right: 30px; 
+}
+
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+
+  .diffContainer2{
+    display: none; 
+    position: fixed;
+    right: 10px; 
+    top: 60px;
+  }
+
+  .diffContainer2 *{
+      display: block; 
+      margin-top: 2px; 
+  }
+  
+
+  .hamburgerNavButtonContainer{
+    display: none; 
+    width: 40px;
+    height: 45px;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 10px; 
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+
+  
+.hamburgerNavButtonContainer span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 60%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  
+  .hamburgerNavButtonContainer span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .hamburgerNavButtonContainer span:nth-child(2),.hamburgerNavButtonContainer span:nth-child(3) {
+    top:8px;
+  }
+  
+  .hamburgerNavButtonContainer span:nth-child(4) {
+    top: 16px;
+  }
+  
+  .hamburgerNavButtonContainer.open span:nth-child(1) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  .hamburgerNavButtonContainer.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .hamburgerNavButtonContainer.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  .hamburgerNavButtonContainer.open span:nth-child(4) {
+    top: 5px;
+    width: 0%;
+    left: 50%;
+  }
+
+.landing::after {
+    content: "";
+    background-image: url("./assets/craftmanship.jpg");
+    background-size: cover; 
+    filter: opacity(40%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+  html{
+      background: black; 
+  }
+
+.landingBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  100%;
+    height: 100%;
+}
+
+.leftLandingContainer, .rightLandingContainer{
+    flex: 1;
+    max-width: 50%;
+    padding: 100px;
+}
+
+.leftLandingContainer{
+
+}
+
+.leftHeader{
+    font-size: 45px;  
+}
+
+.leftSubheader{
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;  
+}
+
+.leftSubheaderQuotationMarker{
+    color: #989898;
+    text-align:  center;
+    font-size: 12px; 
+}
+
+.rightFormHeader{
+    text-transform: uppercase; 
+    text-align: center; 
+    font-weight: bold;
+    font-size: 17px;  
+}
+
+
+.rightForm input{
+    display: block;
+    width: calc( 100% - 24px);
+    padding: 15px 10px;  
+    color: white; 
+    background: rgba(128, 128, 128, 0.326); 
+}
+
+.rightForm input::placeholder{
+    color: white;  
+}
+
+.rightForm input:first-of-type {
+  border: 2px solid #756E6B; 
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom:none;
+}
+
+.rightForm input:not(:first-child){
+    border: 2px solid #756E6B;
+    border-top: 1px solid #756E6B;
+    border-bottom: none; 
+}
+
+.rightFormSubmit{
+    cursor: pointer; 
+
+    width: calc(100%);
+    padding: 10px;
+
+    background: #2C99ED;
+    border: 2px solid  #2C99ED;
+    border-top-width: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; 
+
+    color: white; 
+}
+
+.rightFormSubmit:hover{
+    background: rgb(28, 93, 143);
+    border-color:  rgb(28, 93, 143);
+}
+
+.rightFormAgreement{
+    font-weight: normal;  
+    font-size: 10px; 
+    text-align: center;
+    color: #989898;
+}
+
+.rightFormAgreementLink{
+    color: white; 
+}
+
+footer{
+    bottom: 10px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.leftCopyright{
+    padding-left: 10px;
+}
+
+.rightFooter{
+    padding-right: 10px;
+}
+
+.active{
+    display: block;
+}
+
+@media(max-width:  900px){
+    .leftLandingContainer, .rightLandingContainer{
+        padding: 10px; 
+    }
+}
+
+@media(max-width:  700px){
+    .landingBody{
+        display: block; 
+    }
+    .leftHeader{
+        padding: 10px; 
+    }
+    .leftLandingContainer, .rightLandingContainer{
+        flex: none; 
+        max-width:  100%;
+        width: 100%;
+        padding: 0px;
+        text-align: center; 
+    }
+    .leftLandingContainer{
+        padding-top: 150px;
+    }
+    .rightLandingContainer{
+        width: calc(100% - 30px);
+        display: block; 
+        margin:  0 auto; 
+    }
+    footer{
+        background: black;
+        bottom: 0px;
+        padding-bottom: 5px; 
+        padding-top: 5px; 
+    }
+    footer{
+        display: block; 
+        text-align:  center;
+    }
+    .rightFormAgreement{
+        padding-bottom: 70px; 
+    }
+    .leftCopyright, .rightFooter{
+        width: 100%; 
+    }
+    .diffContainer{
+        display: none;
+    }
+
+    .hamburgerNavButtonContainer{
+        display: block;
+    }
+}
+@media(min-width:  700px){
+    #diffContainer2{
+        display: none;
+    }
+}
+@media(max-width:  400px){
+    .landing::after {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+I put the subheader of "I think what.." quote in quotation marks and italicized it as it's a quote. I was debating putting Huey Newton's face on it, the person  who said the quote, but I didn't know if Stamp would want to be directly quoting or not, so I put a disclaimer below it that said it was their motto for over 10 years. They could easily put Newton's face and/or name there if they'd like to. I made the motto disclaimer grey because I figured it was about the same priority as the ToS disclaimer but I would do testing and talk with others on the team first of course. 
+
+I kept underlines on the navigation links for accessibility reasons, as well as keeping the focus styles by default for people with screen readers and disabilities. If I had more time I would've made custom focus styles, such as changing the border shadow color. I would've used an image for the Stamp if I had a high resolution one, so I just quickly figured out the font and made it a text element. It works, but not if the logo was at all complex. 
+
+Hamburger didn't make sense to me as a logged out user and I did a quick check of possible competitors to this fake company like Pinterest to see how they did it and I saw it no where else. In a real work scenario I would of course ask the designer about all these things and come with a mockup or prototype before bugging them, but I decided here because you asked me to use my best judgement to make the nav items float to the right and use the hamburger for lower screen resolutions. I didn't get to test all the screen resolutions in the time I had but I definitely would've with a Mac I have as well as in Safari, Edge, and Firefox. Also if I had access to a lazy loading library or more time I would make the background image load last manually, but using background-image does the trick quickly. Also, I debated using the hamburger for the footer, but I felt like it was excessive. I think the hamburger menu could be improved upon if I had more time, but it works as  is. I debated making it full width and having a background, but I didn't think it fit the transparent style I was given in the design. Lastly, there was no login in the Nav so I added one, because right now there's only a way to sign up from the landing but no login. I would've also debated adding logos to the header links but I felt that  was too far for this. 
+
+I debated putting the form on top of the "Simple way..." header on lower screen resolutions and I would discuss with the designer and product manager on this one because it's a question of priority. I went with Simple way because it's an introduction, but maybe we value people just signing up. 
+
+I normally would've started with the mobile design and used min-width breakpoints instead of max-width, but I wanted to start with the desktop version for this quick test and go from there. I also would've taken more time to figure out the image background for lower resolutions because there's a bit of black space at the bottom below terms of service because of the padding that I didn't want to take too much time to figure out. The footer being black on those lower resolutions helps to cover for this, and I didn't want the transparent text of the footer overlapping with the form and confusing users. 
+
+I'm so happy with how this turned out, thanks for having me and sorry but I don't want to lose time editing these notes, gleam from the madness as you will. 
+
+--
+
+I quickly modified the hamburger menu from this https://codepen.io/designcouch/pen/Atyop
+
+
